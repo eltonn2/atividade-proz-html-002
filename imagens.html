@@ -1,0 +1,56 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Imagens - Marco Zero</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header, footer {
+            background-color: #0077b6;
+            color: white;
+            padding: 15px;
+        }
+        main {
+            padding: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .gallery img {
+            width: 30%;
+            max-width: 300px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Galeria de Imagens - Marco Zero</h1>
+    </header>
+    <main>
+        <h2>Explore o Marco Zero</h2>
+        <p>Veja algumas imagens deste ponto turístico icônico do Recife.</p>
+        <div class="gallery">
+            <img src="/nome recife.jpg" alt="Letreiro Recife">
+            <img src="/recife-antigo-2.jpg" alt="Marco Zero 2">
+            <img src="/BASE-9-scaled-900x600.jpg" alt="Marco Zero 3">
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 - Turismo em Recife</p>
+    </footer>
+</body>
+</html>
